@@ -1,0 +1,145 @@
+body,
+html {
+  font-size: 12px;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.hero-image,
+#home {
+  background-image: url("../Images/negative-space-black-forest-dawn.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.hero-text {
+  position: absolute;
+  text-align: center;
+  color: white;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+}
+
+header {
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  justify-content: space-between;
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+li a {
+  padding: 8px;
+  font-size: 1.5rem;
+}
+.about-text {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profile-image > img {
+  width: 40%;
+  box-shadow: 5px 5px 15px #505050;
+  border-radius: 50%;
+}
+
+.info-box {
+  height: 100px;
+  width: 70%;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name,
+.profile-image,
+.info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: black;
+  height: 100%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+
+  .person {
+    width: 50%;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 100%;
+    color: white;
+  }
+
+  .footer-column {
+    margin: 5px;
+  }
+}
